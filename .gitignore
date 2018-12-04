@@ -1,0 +1,10 @@
+.DS_Store
+.idea
+.npmrc
+.sonar
+.stryker*
+*.diff
+*.log
+*.orig
+*.patch
+*.sublime-*
