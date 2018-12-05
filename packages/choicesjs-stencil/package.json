@@ -1,0 +1,58 @@
+{
+  "name": "@adidas/yarn-plugin-choicesjs-stencil",
+  "version": "1.1.0",
+  "description": "ChoicesJS Web Component plugin for adidas YARN Design System library",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adidas/adidas-yarn-design-system-plugins.git"
+  },
+  "license": "MIT",
+  "contributors": [
+    "David Recuenco <david.recuencogadea@gmail.com>",
+    "Jaime Pastor <moelders@gmail.com>"
+  ],
+  "homepage": "http://adidas.github.io/adidas-yarn-design-system-plugins/",
+  "peerDependencies": {
+    "choicesjs-stencil": "^1.2"
+  },
+  "devDependencies": {
+    "@adidas/yarn-design-system": "1.5.0",
+    "autoprefixer": "8.6.5",
+    "cross-env": "5.1.1",
+    "css-loader": "0.28.11",
+    "del-cli": "1.1.0",
+    "extract-text-webpack-plugin": "3.0.2",
+    "file-loader": "1.1.11",
+    "less": "3.8.1",
+    "less-loader": "4.1.0",
+    "postcss-loader": "2.1.6",
+    "source-map-loader": "0.2.4",
+    "stylelint": "9.9.0",
+    "stylelint-config-adidas": "1.2.0",
+    "stylelint-config-adidas-bem": "1.2.0",
+    "webpack": "3.8.1"
+  },
+  "scripts": {
+    "start": "npm run build:dev",
+    "clean": "del dist",
+    "build": "npm run build:min",
+    "build:umd": "webpack",
+    "build:dev": "webpack -w",
+    "build:min": "cross-env NODE_ENV=production LIBRARY_NAME=yarn-plugin-choicesjs-stencil webpack -p",
+    "lint": "stylelint src/**/*.less"
+  },
+  "keywords": [
+    "choicesjs",
+    "less",
+    "plugin",
+    "select",
+    "yarn"
+  ],
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ]
+}
