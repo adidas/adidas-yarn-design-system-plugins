@@ -8,3 +8,8 @@
 *.orig
 *.patch
 *.sublime-*
+**/.nyc_output
+**/dist
+**/package-lock.json
+.nuxt
+node_modules

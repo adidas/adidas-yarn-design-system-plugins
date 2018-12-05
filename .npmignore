@@ -1,0 +1,6 @@
+.idea
+.gitattributes
+.gitignore
+.nuxt
+example
+node_modules

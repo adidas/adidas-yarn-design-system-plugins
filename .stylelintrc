@@ -1,0 +1,6 @@
+{
+  "extends": [
+    "stylelint-config-adidas",
+    "stylelint-config-adidas-bem"
+  ]
+}
