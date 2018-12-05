@@ -18,7 +18,7 @@ script:
   fi
 
 deploy:
-  provider: script
+- provider: script
   script: bash .travis/publish.sh
   skip_cleanup: true
   on:
