@@ -1,11 +1,10 @@
 <template>
   <div class="page-container">
     <headerbar/>
+    <toolbar :filter-active="sidebarOpen" @toggleFilter="toggleSidebar"/>
     <main class="main">
+      <sidebar :links="plugins" :open="sidebarOpen"/>
       <div class="container">
-        <div class="row">
-          <nav-tabs class="col-xs-12" :tabs="tabs"/>
-        </div>
         <nuxt/>
       </div>
     </main>
@@ -14,29 +13,31 @@
 </template>
 
 <script>
+import { mapActions, mapGetters } from 'vuex';
 import foot from '~/components/foot/default';
 import headerbar from '~/components/headerbar/default';
-import navTabs from '~/components/nav-tabs/default.vue';
+import sidebar from '~/components/sidebar/default.vue';
+import toolbar from '~/components/toolbar/default.vue';
 import { getPlugins } from '~/services/plugins';
 
 export default {
-  data() {
-    return {
-      activeTabId: ''
-    };
-  },
   computed: {
-    tabs() {
+    ...mapGetters([ 'sidebarOpen' ]),
+    plugins() {
       return getPlugins().map((plugin) => ({
         id: plugin,
         to: `/plugins/${ plugin }`
       }));
     }
   },
+  methods: {
+    ...mapActions([ 'toggleSidebar' ])
+  },
   components: {
     foot,
     headerbar,
-    navTabs
+    sidebar,
+    toolbar
   }
 };
 </script>
