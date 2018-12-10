@@ -1,4 +1,4 @@
-![[](https://travis-ci.com/adidas/adidas-yarn-design-system-plugins)]![[](https://api.travis-ci.com/adidas/adidas-yarn-design-system-plugins.svg?branch=master)
+![[](https://travis-ci.com/adidas/adidas-yarn-design-system-plugins)](https://api.travis-ci.com/adidas/adidas-yarn-design-system-plugins.svg?branch=master)
 
 # adidas YARN Design System plugins
 
