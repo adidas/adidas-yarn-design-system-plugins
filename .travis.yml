@@ -1,0 +1,33 @@
+dist: trusty
+language: node_js
+node_js:
+- "10"
+
+install:
+- npm install
+
+script:
+- export TAG_REGEX=^[0-9]+\.[0-9]+\.[0-9]+
+- npm run setup
+- npm run lint
+- npm run build
+- if [[ $TRAVIS_TAG =~ $TAG_REGEX ]];
+  then
+    npm run lerna:exec -- cp ../../LICENSE .;
+    HOSTNAME=//adidas.github.io/ BASE=/adidas-yarn-design-system-plugins/ npm run doc;
+  fi
+
+deploy:
+- provider: script
+  script: bash .travis/publish.sh
+  skip_cleanup: true
+  on:
+    tags: true
+    condition: $TRAVIS_TAG =~ $TAG_REGEX
+- provider: pages
+  skip-cleanup: true
+  local-dir: ./docs
+  github-token: $GITHUB_TOKEN
+  on:
+    tags: true
+    condition: $TRAVIS_TAG =~ $TAG_REGEX
