@@ -44,6 +44,7 @@ module.exports = {
     '~/styles/style.less'
   ],
   plugins: [
+    '~/plugins/global.js',
     '~/plugins/i18n.js',
     '~/plugins/vendor.js'
   ],

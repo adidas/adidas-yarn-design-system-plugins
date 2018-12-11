@@ -44,11 +44,6 @@ export const choices = [
   { id: 21, value: 'kamanda', label: 'kamanda', selected: false, disabled: false, icon: 'footwear' }
 ];
 
-export const events = [
-  'addItem', 'removeItem', 'highlightItem', 'unhighlightItem',
-  'choice', 'change', 'search', 'showDropdown', 'hideDropdown'
-];
-
 export function createChoiceTemplate(template, { itemSelectText }, choices) {
   return (classNames, data) => {
     const _data = getChoiceData(data, choices);

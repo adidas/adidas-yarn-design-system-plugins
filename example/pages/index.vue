@@ -17,13 +17,3 @@
     </section>
   </div>
 </template>
-
-<script>
-import markdownRenderer from '~/components/markdown/renderer';
-
-export default {
-  components: {
-    markdownRenderer
-  }
-};
-</script>

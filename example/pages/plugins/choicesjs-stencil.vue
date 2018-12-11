@@ -79,9 +79,7 @@
 </template>
 
 <script>
-import markdownRenderer from '~/components/markdown/renderer';
-import { choices, createChoiceTemplate, createItemTemplate, events, getFormValues }
-  from '~/services/choicesjs-stencil';
+import { choices, createChoiceTemplate, createItemTemplate, getFormValues } from '~/services/choicesjs-stencil';
 
 export default {
   data() {
@@ -136,9 +134,6 @@ export default {
       select.addItemText = (value) => this.$t('views.plugins.plugin-choicesjs-stencil.example.config.add-item', { value });
       select.maxItemText = (maxItemCount) => this.$t('views.plugins.plugin-choicesjs-stencil.example.config.max-items', { maxItemCount });
     });
-  },
-  components: {
-    markdownRenderer
   }
 };
 </script>
