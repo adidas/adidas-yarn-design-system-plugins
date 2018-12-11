@@ -11,7 +11,7 @@
     <section class="section">
       <div class="row">
         <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-          <markdown-renderer type="url" :src="''"/>
+          <markdown-renderer type="url" src=""/>
         </div>
       </div>
     </section>
