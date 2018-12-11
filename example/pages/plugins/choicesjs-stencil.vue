@@ -47,7 +47,7 @@
             <h5 class="col-xs-12">
               {{ $t('views.plugins.plugin-choicesjs-stencil.example.type.multiple') }}
             </h5>
-            <choicesjs-stencil class="col-xs-12 choicesjs-stencil multiline"
+            <choicesjs-stencil class="col-xs-12 choicesjs-stencil choicesjs-stencil--multiline"
                 type="multiple"
                 name="multiple"
                 v-pre/>
@@ -64,19 +64,11 @@
           <h6 v-if="type">
             {{ $t(`views.plugins.plugin-choicesjs-stencil.example.result.${ type }`) }}
           </h6>
-          <div v-if="type === 'form'">
+          <div>
             <div class="results__item text-ellipsis" v-for="value in values" :key="value.id">
               <span class="results__item--type">({{ value.name }})</span>
               <span class="results__item--value" :title="transformFormValue(value.value)">
                 {{ transformFormValue(value.value) }}
-              </span>
-            </div>
-          </div>
-          <div v-else>
-            <div class="results__item text-ellipsis" v-for="event in events" :key="event.id">
-              <span class="results__item--type">({{ event.name }})</span>
-              <span class="results__item--value" :title="transformEventData(event.data)">
-                {{ transformEventData(event.data) }}
               </span>
             </div>
           </div>
@@ -95,8 +87,7 @@ export default {
   data() {
     return {
       type: '',
-      values: [],
-      events: []
+      values: []
     };
   },
   methods: {
@@ -117,11 +108,13 @@ export default {
     form.addEventListener('submit', (event) => {
       this.type = 'form';
       this.values = getFormValues(form);
-      this.events = [];
 
       event.preventDefault();
       event.stopImmediatePropagation();
     });
+
+    selectText.removeItems = true;
+    selectText.removeItemButton = true;
 
     selectMultiple.choices = choices;
     selectMultiple.maxItemCount = MAX_ITEMS;
@@ -142,19 +135,6 @@ export default {
       select.itemSelectText = this.$t('views.plugins.plugin-choicesjs-stencil.example.config.item-selection');
       select.addItemText = (value) => this.$t('views.plugins.plugin-choicesjs-stencil.example.config.add-item', { value });
       select.maxItemText = (maxItemCount) => this.$t('views.plugins.plugin-choicesjs-stencil.example.config.max-items', { maxItemCount });
-    });
-
-    [ selectText, selectSingle, selectMultiple ].forEach((select) => {
-      events.forEach((event) => {
-        select.addEventListener(event, (data) => {
-          this.type = 'event';
-          this.values = [];
-          this.events.push({
-            name: event,
-            data: data.detail
-          });
-        });
-      });
     });
   },
   components: {
