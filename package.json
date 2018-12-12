@@ -35,7 +35,7 @@
   "devDependencies": {
     "@adidas/yarn-design-system": "1.5.0",
     "babel-core": "6.26.3",
-    "babel-eslint": "7.2.3",
+    "babel-eslint": "10.0.1",
     "babel-loader": "7.1.4",
     "babel-plugin-istanbul": "4.1.6",
     "babel-preset-env": "1.7.0",
@@ -63,7 +63,6 @@
     "postcss-loader": "2.1.6",
     "raw-loader": "0.5.1",
     "safe-publish": "1.0.0",
-    "showdown": "1.8.6",
     "source-map-loader": "0.2.4",
     "stylelint": "9.9.0",
     "stylelint-config-adidas": "1.2.0",
@@ -72,6 +71,7 @@
     "typeface-roboto": "0.0.54",
     "typeface-roboto-mono": "0.0.54",
     "vue-i18n": "7.6.0",
+    "vue-showdown": "2.0.2",
     "webpack": "3.8.1"
   },
   "keywords": [
