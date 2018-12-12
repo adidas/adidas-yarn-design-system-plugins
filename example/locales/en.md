@@ -1,4 +1,4 @@
-Documentation and examples of the pligins created for [adidas **YARN** Design System][yarn].
+Documentation and examples of the plugins created for [adidas **YARN** Design System][yarn].
 
 The idea of the plugins is not to add customizations for either third party libraries or non core components directly in **YARN** source code.
 
