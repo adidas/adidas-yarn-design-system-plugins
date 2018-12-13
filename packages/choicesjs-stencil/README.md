@@ -1,12 +1,12 @@
 [![npm version](https://badge.fury.io/js/%40adidas%2Fyarn-plugin-choicesjs-stencil.svg)](https://www.npmjs.com/package/@adidas/yarn-plugin-choicesjs-stencil)
 
-# ChoicesJS Web Component plugin for adidas YARN Design System library
+# ChoicesJS Web Component plugin
 
 This plugin is a CSS customization for the [`choicesjs-stencil`][choicesjs-stencil] Web Component.
 
 It extends [adidas YARN Design System][yarn] library by adding the class `.choicesjs-stencil` as part of `.yarn` main class.
 
-Check all its features on the [**documentation page**][adidas-yarn-design-system-plugins-documentation].
+Check all ion the [**documentation page**][adidas-yarn-design-system-plugins-documentation].
 
 ## Use cases
 
@@ -16,11 +16,7 @@ The plugin just customize the [`choicesjs-stencil`][choicesjs-stencil] Web Compo
 
 [NodeJS and NPM][node] are required to work with the repository.
 
-It requires adidas YARN main library (YARN icons font dependency), as well as the Web Component and the [ChoicesJS][choicesjs] library.
-
-```
-npm install choices.js choicesjs-stencil @adidas/yarn-design-system
-```
+It requires adidas **YARN** main library (YARN icons font dependency), as well as the Web Component and the [ChoicesJS][choicesjs] library.
 
 ## Installation and running
 
@@ -30,7 +26,7 @@ npm install choices.js choicesjs-stencil @adidas/yarn-design-system
   ```
 - Run time:
   ```
-  npm install @adidas/yarn-plugin-choicesjs-stencil
+  npm install choices.js choicesjs-stencil @adidas/yarn-design-system @adidas/yarn-plugin-choicesjs-stencil
   ```
 
 Load the stylesheet files and the dependencies in the HTML of your application:
@@ -60,11 +56,19 @@ Or import them in your preprocessed CSS files with `@import`:
 
 The plugin can be used with or without YARN, but in both cases it requires main `.yarn` class in the top or in a parent element.
 
-Just add the class `.choicesjs-stencil` to the Web Component.
+Just add the class `.choicesjs-stencil` to the Web Component:
 
 ```html
 <div class="yarn">
   <choicesjs-stencil class="choicesjs-stencil" type="text"/>
+</div>
+```
+
+For multiline input box add also the classs `.choicesjs-stencil--multiline`:
+
+```html
+<div class="yarn">
+  <choicesjs-stencil class="choicesjs-stencil choicesjs-stencil--multiline" type="text"/>
 </div>
 ```
 
@@ -78,13 +82,13 @@ The library consists of two parts:
 Both are independent and they have different scripts to run them.
 
 - Library:
-    ```
-    npm run build
-    ```
+  ```
+  npm run build
+  ```
 - Example:
-    ```
-    npm run build:example
-    ```
+  ```
+  npm run build:example
+  ```
 
 The library is compiled in the `dist` folder, whereas the example is created in the `docs` folder.
 
@@ -158,13 +162,13 @@ _Note:_ it is mandatory to fix all the issues before pushing the code.
 
 ## FAQ
 
-All the information about maintainers, contributing and license can be found in the root [README](../../README.md) file.
+All the information about maintainers, contributing and license can be found in the root [README](../../README.md#faq) file.
 
 ### License
 
 [MIT](../../LICENSE)
 
-[adidas-yarn-design-system-plugins-documentation]: http://adidas.github.io/adidas-yarn-design-system-plugins/
+[adidas-yarn-plugins-documentation]: http://adidas.github.io/adidas-yarn-design-system-plugins/
 [adidas-style-guide]: https://github.com/adidas/adidas-contribution-guidelines/wiki/Coding-style-guidelines
 [choicesjs-stencil]: https://github.com/adidas/choicesjs-stencil
 [eslint]: https://eslint.org/

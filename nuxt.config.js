@@ -1,7 +1,6 @@
 const path = require('path');
 const url = require('url');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const readMarkdownFiles = require('./scripts/markdown-files.js');
 const readPlugins = require('./scripts/plugin-files');
 
 const { HOSTNAME = '/_nuxt/', BASE = '' } = process.env;
@@ -12,7 +11,13 @@ module.exports = {
   build: {
     vendor: [ 'choicesjs-stencil' ],
     plugins: [ new CopyWebpackPlugin([{ from: './node_modules/choicesjs-stencil/dist', to: './' }]) ],
-    publicPath: url.resolve(HOSTNAME, _BASE)
+    publicPath: url.resolve(HOSTNAME, _BASE),
+    extend(config) {
+      config.module.rules.push({
+        test: /\.md$/,
+        loader: 'raw-loader'
+      });
+    }
   },
   head: {
     title: 'adidas YARN Design System plugins',
@@ -39,6 +44,7 @@ module.exports = {
     '~/styles/style.less'
   ],
   plugins: [
+    '~/plugins/global.js',
     '~/plugins/i18n.js',
     '~/plugins/vendor.js'
   ],
@@ -50,7 +56,6 @@ module.exports = {
     dir: './docs'
   },
   env: {
-    markdown: readMarkdownFiles('example/locales'),
     plugins: readPlugins('example/pages/plugins')
   }
 };

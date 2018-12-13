@@ -6,14 +6,15 @@
   @list-max-height: @list-item-height * @list-max-visible-items;
   @list-dropdown-button-width: 1.5rem;
 
-  &.multiline {
-    .choices .choices__inner {
-      height: auto;
-    }
+  height: @input-height;
+
+  &.choicesjs-stencil--multiline {
+    height: auto;
   }
 
   .choices {
     font-size: @font-size-small;
+    height: inherit;
 
     &[data-type*='select-one']:after {
       border-color: @primary-darkgray fade(@primary-black, 0) fade(@primary-black, 0);
@@ -46,6 +47,7 @@
       font-size: inherit;
       color: @input-color;
       padding: @padding-small-vertical 0 0 0;
+      height: inherit;
       min-height: @input-height;
       display: flex;
       flex-direction: row;
@@ -69,7 +71,7 @@
           line-height: .875;
           padding: @padding-small-vertical;
           margin: 0 0 @padding-small-vertical @padding-small-horizontal;
-          display: inline-block;
+          display: inline-flex;
           position: relative;
           word-break: normal;
 
@@ -92,8 +94,8 @@
             line-height: inherit;
             padding: 0;
             width: auto;
-            margin: auto;
-            display: inherit;
+            margin: 0;
+            display: block;
             opacity: 1;
 
             &:hover {
@@ -105,10 +107,8 @@
               font-family: @icon-font-name;
               font-size: @font-size-small;
               font-weight: 700;
-              line-height: .5;
               margin-left: @padding-base-horizontal;
-              position: relative;
-              top: @padding-xs-vertical;
+              display: flex;
             }
           }
         }
@@ -144,9 +144,10 @@
     .choices__input {
       background-color: @input-bg;
       font-size: @font-size-small;
-      padding: @padding-small-vertical 0 @padding-small-vertical @padding-base-horizontal;
+      padding: @padding-small-vertical @padding-small-horizontal @padding-small-vertical @padding-base-horizontal;
       margin-bottom: 0;
       height: @font-size-large;
+      min-width: 1rem;
 
       &::placeholder {
         color: @primary-gray;
