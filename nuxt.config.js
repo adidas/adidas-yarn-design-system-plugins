@@ -40,6 +40,7 @@ module.exports = {
     './node_modules/@adidas/yarn-design-system/dist/yarn-logo.css',
     './node_modules/@adidas/yarn-design-system/dist/yarn-icon.css',
     './node_modules/@adidas/yarn-design-system/dist/yarn.css',
+    './node_modules/highlight.js/styles/github.css',
     './packages/choicesjs-stencil/dist/yarn-plugin-choicesjs-stencil.css',
     '~/styles/style.less'
   ],

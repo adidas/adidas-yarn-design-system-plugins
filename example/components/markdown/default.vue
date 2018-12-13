@@ -1,5 +1,5 @@
 <template>
-  <vue-showdown :markdown="markdown" flavor="github"/>
+  <vue-showdown class="markdown" :markdown="markdown" flavor="github"/>
 </template>
 
 <script>
