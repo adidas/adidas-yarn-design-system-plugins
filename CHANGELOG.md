@@ -1,3 +1,8 @@
+## 1.0.2
+
+- Fixed links in the example documentation.
+- Improved ChoicesJS Stencil plugin documentation.
+
 ## 1.0.1
 
 - Fixed style of `choicesjs-stencil` package.

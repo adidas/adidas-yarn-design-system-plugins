@@ -6,7 +6,7 @@ This plugin is a CSS customization for the [`choicesjs-stencil`][choicesjs-stenc
 
 It extends [adidas YARN Design System][yarn] library by adding the class `.choicesjs-stencil` as part of `.yarn` main class.
 
-Check all ion the [**documentation page**][adidas-yarn-design-system-plugins-documentation].
+Check all ion the [**documentation page**][yarn-plugins-documentation].
 
 ## Use cases
 
@@ -71,6 +71,8 @@ For multiline input box add also the classs `.choicesjs-stencil--multiline`:
   <choicesjs-stencil class="choicesjs-stencil choicesjs-stencil--multiline" type="text"/>
 </div>
 ```
+
+Check how to work with the Web Component on [ChoicesJS Stencil documentation][choicesjs-stencil].
 
 ## Building
 
@@ -179,3 +181,5 @@ All the information about maintainers, contributing and license can be found in 
 [vuejs]: https://vuejs.org/
 [webpack]: https://webpack.js.org/
 [webpack-hot-module-replacement]: https://webpack.js.org/concepts/hot-module-replacement/
+[yarn]: https://github.com/adidas/adidas-yarn-design-system
+[yarn-plugins-documentation]: https://adidas.github.io/adidas-yarn-design-system-plugins/

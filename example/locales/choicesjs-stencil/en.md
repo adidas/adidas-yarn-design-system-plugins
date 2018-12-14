@@ -37,8 +37,16 @@ Just add the class `.choicesjs-stencil` to the Web Component.
 </div>
 ```
 
-Check how to work with the library in [ChoicesJS Stencil documentation][choicesjs-stencil].
+For multiline input box add also the classs `.choicesjs-stencil--multiline`:
 
-[yarn]: https://github.com/adidas/adidas-yarn-design-system
+```html
+<div class="yarn">
+  <choicesjs-stencil class="choicesjs-stencil choicesjs-stencil--multiline" type="text"/>
+</div>
+```
+
+Check how to work with the Web Component on [ChoicesJS Stencil documentation][choicesjs-stencil].
+
 [choicesjs]: https://github.com/jshjohnson/Choices
 [choicesjs-stencil]: https://github.com/adidas/choicesjs-stencil
+[yarn]: https://github.com/adidas/adidas-yarn-design-system
