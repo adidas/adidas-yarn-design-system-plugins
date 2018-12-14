@@ -7,4 +7,5 @@ Each plugin extends [adidas YARN Design System library][yarn-library] by adding 
 The source code of all of them is placed in a mono repository: [@adidas/yarn-design-system-plugins][repository].
 
 [repository]: https://github.com/adidas/adidas-yarn-design-system-plugins
-[yarn]: https://github.com/adidas/adidas-yarn-design-system
+[yarn]: https://adidas.github.io/adidas-yarn-design-system/
+[yarn-library]: https://github.com/adidas/adidas-yarn-design-system
