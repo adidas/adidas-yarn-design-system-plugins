@@ -1,3 +1,7 @@
+## 1.0.3
+
+- Updated ChoicesJS Stencil plugin with new library version.
+
 ## 1.0.2
 
 - Fixed links in the example documentation.
