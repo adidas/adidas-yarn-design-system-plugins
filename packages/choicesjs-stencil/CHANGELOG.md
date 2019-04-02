@@ -1,3 +1,7 @@
+# 1.3.0
+
+- Updated ChoicesJS Stencil library.
+
 # 1.2.0
 
 - Fixed hidden input style.
