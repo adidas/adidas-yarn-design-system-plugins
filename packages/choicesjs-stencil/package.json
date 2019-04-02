@@ -13,10 +13,10 @@
   ],
   "homepage": "http://adidas.github.io/adidas-yarn-design-system-plugins/",
   "peerDependencies": {
-    "choicesjs-stencil": "^1.2"
+    "choicesjs-stencil": "^1.3"
   },
   "devDependencies": {
-    "@adidas/yarn-design-system": "1.5.0",
+    "@adidas/yarn-design-system": "1.5.5",
     "autoprefixer": "8.6.5",
     "cross-env": "5.1.1",
     "css-loader": "0.28.11",
