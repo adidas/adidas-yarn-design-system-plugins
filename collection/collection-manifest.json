@@ -1,0 +1,339 @@
+{
+  "components": [
+    {
+      "tag": "choicesjs-stencil",
+      "dependencies": [],
+      "componentClass": "ChoicesJSStencil",
+      "componentPath": "components/choicesjs-stencil/choicesjs-stencil.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/choicesjs-stencil/choicesjs-stencil.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "addItemFilterFn",
+          "attr": "add-item-filter-fn"
+        },
+        {
+          "name": "addItems",
+          "type": "Boolean",
+          "attr": "add-items"
+        },
+        {
+          "name": "addItemText",
+          "type": "String",
+          "attr": "add-item-text"
+        },
+        {
+          "name": "appendValue",
+          "type": "String",
+          "attr": "append-value"
+        },
+        {
+          "name": "callbackOnCreateTemplates",
+          "attr": "callback-on-create-templates"
+        },
+        {
+          "name": "callbackOnInit",
+          "attr": "callback-on-init"
+        },
+        {
+          "name": "choices",
+          "attr": "choices"
+        },
+        {
+          "name": "classNames",
+          "attr": "class-names"
+        },
+        {
+          "name": "delimiter",
+          "type": "String",
+          "attr": "delimiter"
+        },
+        {
+          "name": "duplicateItemsAllowed",
+          "type": "Boolean",
+          "attr": "duplicate-items-allowed"
+        },
+        {
+          "name": "editItems",
+          "type": "Boolean",
+          "attr": "edit-items"
+        },
+        {
+          "name": "fuseOptions",
+          "attr": "fuse-options"
+        },
+        {
+          "name": "items",
+          "attr": "items"
+        },
+        {
+          "name": "itemSelectText",
+          "type": "String",
+          "attr": "item-select-text"
+        },
+        {
+          "name": "loadingText",
+          "type": "String",
+          "attr": "loading-text"
+        },
+        {
+          "name": "maxItemCount",
+          "type": "Number",
+          "attr": "max-item-count"
+        },
+        {
+          "name": "maxItemText",
+          "type": "String",
+          "attr": "max-item-text"
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "attr": "name"
+        },
+        {
+          "name": "noChoicesText",
+          "type": "String",
+          "attr": "no-choices-text"
+        },
+        {
+          "name": "noResultsText",
+          "type": "String",
+          "attr": "no-results-text"
+        },
+        {
+          "name": "paste",
+          "type": "Boolean",
+          "attr": "paste"
+        },
+        {
+          "name": "placeholder",
+          "type": "Any",
+          "attr": "placeholder"
+        },
+        {
+          "name": "placeholderValue",
+          "type": "String",
+          "attr": "placeholder-value"
+        },
+        {
+          "name": "position",
+          "type": "String",
+          "attr": "position"
+        },
+        {
+          "name": "prependValue",
+          "type": "String",
+          "attr": "prepend-value"
+        },
+        {
+          "name": "removeItemButton",
+          "type": "Boolean",
+          "attr": "remove-item-button"
+        },
+        {
+          "name": "removeItems",
+          "type": "Boolean",
+          "attr": "remove-items"
+        },
+        {
+          "name": "renderChoiceLimit",
+          "type": "Number",
+          "attr": "render-choice-limit"
+        },
+        {
+          "name": "renderSelectedChoices",
+          "type": "String",
+          "attr": "render-selected-choices"
+        },
+        {
+          "name": "resetScrollPosition",
+          "type": "Boolean",
+          "attr": "reset-scroll-position"
+        },
+        {
+          "name": "searchChoices",
+          "type": "Boolean",
+          "attr": "search-choices"
+        },
+        {
+          "name": "searchEnabled",
+          "type": "Boolean",
+          "attr": "search-enabled"
+        },
+        {
+          "name": "searchFields",
+          "type": "String",
+          "attr": "search-fields"
+        },
+        {
+          "name": "searchFloor",
+          "type": "Number",
+          "attr": "search-floor"
+        },
+        {
+          "name": "searchPlaceholderValue",
+          "type": "String",
+          "attr": "search-placeholder-value"
+        },
+        {
+          "name": "searchResultLimit",
+          "type": "Number",
+          "attr": "search-result-limit"
+        },
+        {
+          "name": "shouldSort",
+          "type": "Boolean",
+          "attr": "should-sort"
+        },
+        {
+          "name": "shouldSortItems",
+          "type": "Boolean",
+          "attr": "should-sort-items"
+        },
+        {
+          "name": "silent",
+          "type": "Boolean",
+          "attr": "silent"
+        },
+        {
+          "name": "sortFn",
+          "attr": "sort-fn"
+        },
+        {
+          "name": "type",
+          "type": "String",
+          "attr": "type"
+        },
+        {
+          "name": "uniqueItemText",
+          "type": "String",
+          "attr": "unique-item-text"
+        },
+        {
+          "name": "value",
+          "type": "String",
+          "attr": "value"
+        }
+      ],
+      "methods": [
+        {
+          "name": "ajax"
+        },
+        {
+          "name": "clearChoices"
+        },
+        {
+          "name": "clearInput"
+        },
+        {
+          "name": "clearStore"
+        },
+        {
+          "name": "disable"
+        },
+        {
+          "name": "enable"
+        },
+        {
+          "name": "getValue"
+        },
+        {
+          "name": "hideDropdown"
+        },
+        {
+          "name": "highlightAll"
+        },
+        {
+          "name": "highlightItem"
+        },
+        {
+          "name": "removeActiveItems"
+        },
+        {
+          "name": "removeActiveItemsByValue"
+        },
+        {
+          "name": "removeHighlightedItems"
+        },
+        {
+          "name": "setChoiceByValue"
+        },
+        {
+          "name": "setChoices"
+        },
+        {
+          "name": "setValue"
+        },
+        {
+          "name": "showDropdown"
+        },
+        {
+          "name": "unhighlightAll"
+        },
+        {
+          "name": "unhighlightItem"
+        }
+      ],
+      "hostElement": {
+        "name": "root"
+      },
+      "events": [
+        {
+          "event": "addItem",
+          "method": "addItemEvent"
+        },
+        {
+          "event": "change",
+          "method": "changeEvent"
+        },
+        {
+          "event": "choice",
+          "method": "choiceEvent"
+        },
+        {
+          "event": "hideDropdown",
+          "method": "hideDropdownEvent"
+        },
+        {
+          "event": "highlightItem",
+          "method": "highlightItemEvent"
+        },
+        {
+          "event": "removeItem",
+          "method": "removeItemEvent"
+        },
+        {
+          "event": "search",
+          "method": "searchEvent"
+        },
+        {
+          "event": "showDropdown",
+          "method": "showDropdownEvent"
+        },
+        {
+          "event": "unhighlightItem",
+          "method": "unhighlightItemEvent"
+        }
+      ]
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.18.1",
+    "typescriptVersion": "3.3.3"
+  },
+  "bundles": [
+    {
+      "components": [
+        "choicesjs-stencil"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "tags": [
+    {
+      "label": "choicesjs-stencil",
+      "description": "",
+      "attributes": [
+        {
+          "label": "add-item-text",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "add-items",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "append-value",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "delimiter",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "duplicate-items-allowed",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "edit-items",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "item-select-text",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "loading-text",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "max-item-count",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "max-item-text",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "name",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "no-choices-text",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "no-results-text",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "paste",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "placeholder",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "placeholder-value",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "position",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "prepend-value",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "remove-item-button",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "remove-items",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "render-choice-limit",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "render-selected-choices",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "reset-scroll-position",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "search-choices",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "search-enabled",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "search-fields",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "search-floor",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "search-placeholder-value",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "search-result-limit",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "should-sort",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "should-sort-items",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "silent",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "type",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "unique-item-text",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "value",
+          "description": "",
+          "required": false
+        }
+      ]
+    }
+  ]
+}
