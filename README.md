@@ -1,5 +1,7 @@
 ![[](https://travis-ci.com/adidas/adidas-yarn-design-system-plugins)](https://api.travis-ci.com/adidas/adidas-yarn-design-system-plugins.svg?branch=master)
 
+![](./logo.png)
+
 # adidas YARN Design System plugins
 
 Monorepository to manage all the adidas **YARN** Design System plugins for adidas only use.

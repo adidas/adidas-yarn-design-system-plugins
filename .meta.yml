@@ -1,0 +1,21 @@
+imageUrl: https://raw.githubusercontent.com/adidas/adidas-yarn-design-system-plugins/master/logo.png
+backgroundColor: '#fce0cc'
+maintainers:
+- David.Recuenco@adidas-group.com
+- Jaime.Pastor@adidas-group.com
+category: library
+summary: 'adidas YARN Design System plugins'
+links:
+- name: Repository
+  url: https://github.com/adidas/adidas-yarn-design-system-plugins
+- name: Demo
+  url: https://adidas.github.io/adidas-yarn-design-system-plugins/
+keywords:
+- adidas
+- design
+- design-system
+- yarn
+- css
+- plugins
+- choicesjs
+- stencil
